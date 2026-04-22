@@ -1,0 +1,1 @@
+This folder need to exist in other to implement FSD with nextjs without any problem
