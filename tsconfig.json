@@ -31,6 +31,6 @@
     ".next/dev/types/**/*.ts",
     ".storybook/**/*.ts",
     "**/*.mts"
-  ],
+, ".storybook/preview.tsx"  ],
   "exclude": ["node_modules"]
 }
