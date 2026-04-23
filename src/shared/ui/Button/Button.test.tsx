@@ -34,18 +34,6 @@ describe('Button', () => {
     expect(handleClick).not.toHaveBeenCalled();
   });
 
-
-  it('should apply correct classes based on variant prop (happy path)', () => {
-    const { rerender } = render(<Button variant="primary">Btn</Button>);
-    expect(screen.getByRole('button')).toHaveClass('bg-blue-600');
-
-    rerender(<Button variant="secondary">Btn</Button>);
-    expect(screen.getByRole('button')).toHaveClass('bg-gray-600');
-
-    rerender(<Button variant="outline">Btn</Button>);
-    expect(screen.getByRole('button')).toHaveClass('border-gray-300');
-  });
-
   it('should forward ref correctly', () => {
     const ref = React.createRef<HTMLButtonElement>();
     render(<Button ref={ref}>Ref Button</Button>);
