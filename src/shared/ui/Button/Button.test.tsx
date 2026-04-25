@@ -28,7 +28,8 @@ describe('Button', () => {
     expect(button).toHaveAttribute('aria-busy', 'true');
     
     expect(screen.getByTestId('button-spinner')).toBeInTheDocument();
-    expect(screen.queryByText(/submit/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/submit/i)).toBeInTheDocument();
+    expect(screen.getByText(/submit/i)).toHaveAttribute('aria-hidden', 'true');
     
     fireEvent.click(button);
     expect(handleClick).not.toHaveBeenCalled();

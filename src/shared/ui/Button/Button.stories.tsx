@@ -40,6 +40,6 @@ export const Secondary: Story = {
 
 export const Outline: Story = {
   args: {
-    variant: 'outline',
+    variant: 'dangerous',
   },
 };
