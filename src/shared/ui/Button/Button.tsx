@@ -39,7 +39,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             className="h-4 w-4 animate-spin absolute"
           />
         )}
-        <span className={`${isLoading && "opacity-0"}`} aria-hidden={isLoading}>{children}</span>
+        <span className={`${isLoading && "invisible"}`} aria-hidden={isLoading}>{children}</span>
       </button>
     );
   },
