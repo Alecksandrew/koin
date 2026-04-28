@@ -38,7 +38,7 @@ export const Secondary: Story = {
   },
 };
 
-export const Outline: Story = {
+export const Dangerous: Story = {
   args: {
     variant: 'dangerous',
   },
