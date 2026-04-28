@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/nextjs-vite";
 import { themes } from "storybook/theming";
 
-import "@/app/globals.css";
+import "@/app/ui/globals.css";
 
 const preview: Preview = {
   decorators: [

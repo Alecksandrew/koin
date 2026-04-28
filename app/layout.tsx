@@ -1,5 +1,5 @@
 import { Space_Grotesk } from "next/font/google";
-import "@/app/globals.css";
+import "@/app/ui/globals.css";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
