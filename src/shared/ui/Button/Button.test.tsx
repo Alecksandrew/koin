@@ -1,7 +1,8 @@
 import React from "react";
 import { describe, it, expect, vi } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Button } from "./Button";
+import userEvent from "@testing-library/user-event";
 
 describe("Button", () => {
   it("should render the button with the provided text", () => {
@@ -11,17 +12,17 @@ describe("Button", () => {
     ).toBeInTheDocument();
   });
 
-  it("should call onClick when clicked", () => {
+  it("should call onClick when clicked", async () => {
     const handleClick = vi.fn();
     render(<Button onClick={handleClick}>Click me</Button>);
 
     const button = screen.getByRole("button", { name: /click me/i });
-    fireEvent.click(button);
+    await userEvent.click(button);
 
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
 
-  it("should render a loading state when isLoading is true and hide text", () => {
+  it("should render a loading state when isLoading is true and hide text", async () => {
     const handleClick = vi.fn();
     render(
       <Button isLoading onClick={handleClick}>
@@ -38,7 +39,7 @@ describe("Button", () => {
     expect(screen.getByText(/submit/i)).toHaveClass("invisible"); // I had to use this fragile test because vitest doesnt read CSS
     expect(screen.queryByText(/submit/i)).toBeInTheDocument();
 
-    fireEvent.click(button);
+    await userEvent.click(button);
     expect(handleClick).not.toHaveBeenCalled();
   });
 
