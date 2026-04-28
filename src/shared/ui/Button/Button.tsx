@@ -7,7 +7,6 @@ export interface ButtonProps extends Omit<
   "className"
 > {
   isLoading?: boolean;
-  boxShadow?: boolean;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -18,7 +17,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       children,
       disabled,
       isLoading,
-      boxShadow,
       ...props
     },
     ref,
@@ -30,7 +28,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={isDisabled}
         aria-busy={isLoading}
-        className={variants({ variant, size })}
+        className={`${variants({ variant, size })} relative`}
         {...props}
       >
         {isLoading && (

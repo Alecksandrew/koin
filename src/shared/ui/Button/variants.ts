@@ -5,7 +5,6 @@ export type ButtonVariant = VariantProps<typeof variants>;
 export const variants = cva(
 [
   "font-semibold",
-  "text-md",
   "rounded-lg",
   "inline-flex",
   "items-center",
