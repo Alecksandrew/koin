@@ -17,6 +17,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-foreground-brand: var(--foreground-brand);
+  
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
 
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
@@ -32,6 +35,21 @@
   --color-dangerous: var(--dangerous);
   --color-dangerous-hover: var(--dangerous-hover);
   --color-dangerous-foreground: var(--dangerous-foreground);
+
+  /* Border */
+  --radius-none: var(--border-radius-none);
+  --radius-sm: var(--border-radius-sm);
+  --radius-md: var(--border-radius-md);
+  --radius-lg: var(--border-radius-lg);
+  --radius-full: var(--border-radius-full);
+
+  /* Spacing */
+  --spacing-none: var(--spacing-none);
+  --spacing-xs: var(--spacing-xs);
+  --spacing-sm: var(--spacing-sm);
+  --spacing-md: var(--spacing-md);
+  --spacing-lg: var(--spacing-lg);
+  --spacing-xl: var(--spacing-xl);
 
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
