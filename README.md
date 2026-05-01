@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Koin — Account Manager
 
-## Getting Started
+A modern personal finance app for managing recurring accounts, tracking expenses, and visualizing cash flow over time.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+-  **Account Management** — Full CRUD with tags, recurrence, and metadata
+-  **Cash Flow Projection** — Visualize past months, current month, and the next 12 months
+-  **Search & Filtering** — Text search and  filters by due date, status and tags
+- **Notification Engine** — Automatic reminders via Email and Telegram
+-  **Dark/Light Mode** — Persistent theme with smooth UX feedback (skeletons, toasts)
+
+## 🧱 Tech Stack
+
+| Concern | Technology |
+|---|---|
+| Framework | Next.js|
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Client State | Zustand |
+| Server State | React Query |
+| Forms & Validation | React Hook Form + Zod |
+| i18n | next-intl |
+| Testing | Vitest |
+| Design system | Storybook |
+| Auth | Supabase |
+
+
+## 🏗️ Folder Architecture
+
+This project follows **[Feature-Sliced Design (FSD)](https://feature-sliced.design)** — a methodology that organizes code by business domain and responsibility, not by file type.
+
+```
+app → pages → widgets → features → entities → shared
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Layer | Responsibility |
+|---|---|
+| `app` | providers, global styles, initialization |
+| `pages` | Route-level composition — thin, only assembles widgets |
+| `widgets` | Large self-contained UI blocks. feature + entity |
+| `features` | User actions that bring business value (create, filter, pay) |
+| `entities` | Core business models: `account`, `tag`, `user` |
+| `shared` | Generic, domain-agnostic UI, utilities, and config |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Each layer can only import from layers **below** it. Each slice exposes a public API via `index.ts`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> For deeper technical details, see [`docs/SYSTEM-DESIGN.md`](./docs/SYSTEM-DESIGN.md).
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Prerequisites:** Node.js 18+, npm
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Install dependencies
+npm install
 
-## Deploy on Vercel
+# Start the development server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔗 Links
+
+- 🎨 [Figma Design](https://www.figma.com/design/GWidckpZ8NDvWXEQnsXgmU/Untitled)
+- 🧠 [High-Level Architecture Wireframe](https://gemini.google.com/share/d4dfaa223f0e)
+- 📖 [System Design Document](./docs/SYSTEM-DESIGN.md)
