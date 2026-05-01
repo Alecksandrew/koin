@@ -13,6 +13,9 @@
   --secondary-hover: var(--pr-slate-200);
   --secondary-foreground: var(--pr-blue-500);
 
+  --interactive: var(--pr-slate-200);
+  --interactive-focus: var(--pr-blue-500);
+
   --dangerous: var(--pr-red-600);
   --dangerous-hover: var(--pr-red-500);
   --dangerous-foreground: var(--pr-slate-100);
@@ -31,7 +34,10 @@
   --secondary-hover: var(--pr-slate-700);
   --secondary-foreground: var(--pr-slate-100);
 
-  --dangerous: var(--pr-red-500);
+  --interactive: var(--pr-slate-800);
+  --interactive-focus: var(--pr-slate-100);
+
+  --dangerous: var(--pr-red-600);
   --dangerous-hover: var(--pr-red-400);
   --dangerous-foreground: var(--pr-slate-100);
 }

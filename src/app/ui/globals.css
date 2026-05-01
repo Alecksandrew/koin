@@ -1,6 +1,23 @@
 @import "tailwindcss";
 @import "./tokens/semantics.css";
 
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+  }
+
+  :disabled,
+  [aria-disabled="true"] {
+    @apply pointer-events-none cursor-not-allowed opacity-50;
+  }
+
+  input:read-only,
+  textarea:read-only {
+    @apply pointer-events-none outline-none;
+  }
+}
+
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -14,15 +31,15 @@
   --color-secondary-hover: var(--secondary-hover);
   --color-secondary-foreground: var(--secondary-foreground);
 
+  --color-interactive: var(--interactive);
+  --color-interactive-focus: var(--interactive-focus);
+
+
   --color-dangerous: var(--dangerous);
   --color-dangerous-hover: var(--dangerous-hover);
   --color-dangerous-foreground: var(--dangerous-foreground);
 
+
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
 }
