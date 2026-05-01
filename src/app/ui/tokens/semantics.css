@@ -5,6 +5,9 @@
   --foreground: var(--pr-slate-900);
   --foreground-brand: var(--pr-blue-500);
 
+  --surface: var(--pr-white);
+  --surface-foreground: var(--pr-slate-900);
+
   --primary: var(--pr-blue-500);
   --primary-hover: var(--pr-blue-400);
   --primary-foreground: var(--pr-slate-100);
@@ -19,12 +22,38 @@
   --dangerous: var(--pr-red-600);
   --dangerous-hover: var(--pr-red-500);
   --dangerous-foreground: var(--pr-slate-100);
+
+  /* Borders */
+  --border-radius-none: var(--pr-border-radius-none);
+  --border-radius-sm: var(--pr-border-radius-50);
+  --border-radius-md: var(--pr-border-radius-100);
+  --border-radius-lg: var(--pr-border-radius-300);
+  --border-radius-full: var(--pr-border-radius-full);
+
+  /* Spacing */
+  --spacing-none: var(--pr-spacing-0);
+  --spacing-xs: var(--pr-spacing-50);
+  --spacing-sm: var(--pr-spacing-100);
+  --spacing-md: var(--pr-spacing-200);
+  --spacing-lg: var(--pr-spacing-300);
+  --spacing-xl: var(--pr-spacing-400);
+
+  /* Shadows */
+  --shadow-none: var(--pr-shadow-0);
+  --shadow-xs: var(--pr-shadow-100);
+  --shadow-sm: var(--pr-shadow-200);
+  --shadow-md: var(--pr-shadow-300);
+  --shadow-lg: var(--pr-shadow-400);
+  --shadow-xl: var(--pr-shadow-500);
 }
 
 .dark {
   --background: var(--pr-slate-900);
   --foreground: var(--pr-slate-100);
   --foreground-brand: var(--pr-blue-400);
+
+  --surface: var(--pr-slate-800);
+  --surface-foreground: var(--pr-slate-100);
 
   --primary: var(--pr-blue-400);
   --primary-hover: var(--pr-blue-300);

@@ -1,5 +1,6 @@
 :root {
   --pr-white: #ffffff;
+  --pr-black: #000000;
 
   --pr-slate-50: #f8fafc;
   --pr-slate-100: #f1f5f9;
@@ -33,4 +34,33 @@
   --pr-red-700: #b91c1c;
   --pr-red-800: #991b1b;
   --pr-red-900: #7f1d1d;
+
+  --pr-border-radius-0: 0px;
+  --pr-border-radius-50: 2px;
+  --pr-border-radius-100: 4px;
+  --pr-border-radius-200: 8px;
+  --pr-border-radius-300: 12px;
+  --pr-border-radius-400: 16px;
+  --pr-border-radius-500: 20px;
+  --pr-border-radius-600: 24px;
+  --pr-border-radius-full: 9999px;
+
+  --pr-spacing-0: 0px;
+  --pr-spacing-50: 2px;
+  --pr-spacing-100: 4px;
+  --pr-spacing-200: 8px;
+  --pr-spacing-300: 12px;
+  --pr-spacing-400: 16px;
+  --pr-spacing-500: 20px;
+  --pr-spacing-600: 24px;
+  --pr-spacing-700: 28px;
+  --pr-spacing-800: 32px;
+  --pr-spacing-900: 36px;
+
+  --pr-shadow-0: none;
+  --pr-shadow-100: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+  --pr-shadow-200: 0 4px 6px -1px rgb(0 0 0 / 0.15);
+  --pr-shadow-300: 0 10px 15px -3px rgb(0 0 0 / 0.15);
+  --pr-shadow-400: 0 20px 25px -5px rgb(0 0 0 / 0.15);
+  --pr-shadow-500: 0 25px 50px -12px rgb(0 0 0 / 0.15);
 }
