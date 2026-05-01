@@ -42,6 +42,9 @@ If there is ambiguity:
 
 #### Step 1. Planning and Testing (Vitest)
 
+- You should always use Test Driven Development
+- Always use up-to-date syntax, patterns, and best practices (within the last 1 month). Before implementing, verify if there have been recent changes and avoid legacy approaches. Prioritize modern APIs—for example, in React, they dont use React.ForwardRef anymore, the new syntax use ref as a prop directly with the component instead of forwardRef.
+
 **MANDATORY:** Before writing any test, list the observable behaviors from the user's perspective.
 Each behavior must answer one of the questions below. Each item becomes an `it()` or group of `it()`.
 
@@ -350,3 +353,10 @@ Always:
 - Explain trade-offs objectively.
 - Avoid excessive verbosity.
 - Explain the command you want to run in the console, what it does, and why you want to use it.
+
+
+
+
+## General Observations
+
+- Try to use the most recent approach. Search in the documentation and try to always based your development in the technologies until 1 month ago of knowledge

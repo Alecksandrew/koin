@@ -3,6 +3,7 @@ import { themes } from "storybook/theming";
 
 import "@/app/ui/globals.css";
 
+
 const preview: Preview = {
   decorators: [
     (Story) => (
@@ -23,6 +24,8 @@ const preview: Preview = {
       light: { ...themes.normal },
 
       stylePreview: true,
+
+      classTarget: 'html'
     },
     a11y: {
       // 'todo' - show a11y violations in the test UI only
