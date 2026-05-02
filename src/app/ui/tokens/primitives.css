@@ -63,4 +63,10 @@
   --pr-shadow-300: 0 10px 15px -3px rgb(0 0 0 / 0.15);
   --pr-shadow-400: 0 20px 25px -5px rgb(0 0 0 / 0.15);
   --pr-shadow-500: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+
+  --pr-breakpoint-100: 30rem;  
+  --pr-breakpoint-200: 48rem;  
+  --pr-breakpoint-300: 64rem;  
+  --pr-breakpoint-400: 80rem; 
+  --pr-breakpoint-500: 90rem; 
 }
