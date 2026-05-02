@@ -9,7 +9,7 @@ export const variants = cva(
     "outline-2",
     "outline-transparent",
     "focus:outline-interactive-focus",
-    "rounded-lg",
+    "rounded-md",
     "p-2",
     "aria-invalid:outline-dangerous",
     "aria-invalid:text-dangerous",
