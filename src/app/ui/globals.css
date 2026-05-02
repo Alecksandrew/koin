@@ -37,19 +37,27 @@
   --color-dangerous-foreground: var(--dangerous-foreground);
 
   /* Border */
-  --radius-none: var(--border-radius-none);
-  --radius-sm: var(--border-radius-sm);
-  --radius-md: var(--border-radius-md);
-  --radius-lg: var(--border-radius-lg);
-  --radius-full: var(--border-radius-full);
+  --radius-none: var(--pr-border-radius-0);
+  --radius-sm: var(--pr-border-radius-50);
+  --radius-md: var(--pr-border-radius-100);
+  --radius-lg: var(--pr-border-radius-300);
+  --radius-full: var(--pr-border-radius-full);
 
   /* Spacing */
-  --spacing-none: var(--spacing-none);
-  --spacing-xs: var(--spacing-xs);
-  --spacing-sm: var(--spacing-sm);
-  --spacing-md: var(--spacing-md);
-  --spacing-lg: var(--spacing-lg);
-  --spacing-xl: var(--spacing-xl);
+  --spacing-none: var(--pr-spacing-0);
+  --spacing-xs: var(--pr-spacing-50);
+  --spacing-sm: var(--pr-spacing-100);
+  --spacing-md: var(--pr-spacing-200);
+  --spacing-lg: var(--pr-spacing-300);
+  --spacing-xl: var(--pr-spacing-400);
+
+  /* Shadows */
+  --shadow-none: var(--shadow-none);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
 
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
