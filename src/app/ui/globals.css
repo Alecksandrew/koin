@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "./tokens/semantics.css";
 
+/* Safelist for Layout Primitives (Stack, Grid) */
+@source inline("{xs:,sm:,md:,lg:,xl:,}gap-{none,xs,sm,md,lg,xl}");
+@source inline("{xs:,sm:,md:,lg:,xl:,}flex-{row,col,row-reverse,col-reverse,wrap,nowrap,wrap-reverse}");
+@source inline("{xs:,sm:,md:,lg:,xl:,}items-{start,center,end,baseline,stretch}");
+@source inline("{xs:,sm:,md:,lg:,xl:,}justify-{normal,start,center,end,between,around,evenly}");
+
 @layer base {
   body {
     background: var(--background);
@@ -60,6 +66,13 @@
   --shadow-md: var(--shadow-md);
   --shadow-lg: var(--shadow-lg);
   --shadow-xl: var(--shadow-xl);
+
+  /* Breakpoints */
+  --breakpoint-xs: var(--pr-breakpoint-100);
+  --breakpoint-sm: var(--pr-breakpoint-200);
+  --breakpoint-md: var(--pr-breakpoint-300);
+  --breakpoint-lg: var(--pr-breakpoint-400);
+  --breakpoint-xl: var(--pr-breakpoint-500);
 
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
