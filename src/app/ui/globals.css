@@ -17,6 +17,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-foreground-brand: var(--foreground-brand);
+  
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
 
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
@@ -32,6 +35,29 @@
   --color-dangerous: var(--dangerous);
   --color-dangerous-hover: var(--dangerous-hover);
   --color-dangerous-foreground: var(--dangerous-foreground);
+
+  /* Border */
+  --radius-none: var(--pr-border-radius-0);
+  --radius-sm: var(--pr-border-radius-50);
+  --radius-md: var(--pr-border-radius-100);
+  --radius-lg: var(--pr-border-radius-300);
+  --radius-full: var(--pr-border-radius-full);
+
+  /* Spacing */
+  --spacing-none: var(--pr-spacing-0);
+  --spacing-xs: var(--pr-spacing-50);
+  --spacing-sm: var(--pr-spacing-100);
+  --spacing-md: var(--pr-spacing-200);
+  --spacing-lg: var(--pr-spacing-300);
+  --spacing-xl: var(--pr-spacing-400);
+
+  /* Shadows */
+  --shadow-none: var(--shadow-none);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
 
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
