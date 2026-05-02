@@ -7,6 +7,7 @@ export interface FormFieldProps {
   label: string;
   error?: string;
   hint?: string;
+  /** A single form control (e.g. `<Input>`) that will receive `id`, `aria-describedby` and `aria-invalid` via context. Rendering more than one control here produces duplicate `id` attributes and broken accessibility associations. */
   children: ReactNode;
 }
 
