@@ -38,9 +38,11 @@
 
   /* Border */
   --radius-none: var(--pr-border-radius-0);
-  --radius-sm: var(--pr-border-radius-50);
-  --radius-md: var(--pr-border-radius-100);
+  --radius-xs: var(--pr-border-radius-50);
+  --radius-sm: var(--pr-border-radius-100);
+  --radius-md: var(--pr-border-radius-200);
   --radius-lg: var(--pr-border-radius-300);
+  --radius-xl: var(--pr-border-radius-400);
   --radius-full: var(--pr-border-radius-full);
 
   /* Spacing */

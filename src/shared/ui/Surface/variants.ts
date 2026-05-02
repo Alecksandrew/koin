@@ -4,7 +4,7 @@ export type SurfaceVariant = VariantProps<typeof variants>;
 
 export const variants = cva(
   [
-    "rounded-md p-md",
+    "rounded-lg p-md",
   ],
   {
     variants: {
