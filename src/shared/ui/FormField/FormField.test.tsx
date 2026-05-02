@@ -71,7 +71,7 @@ describe("<FormField />", () => {
   });
 
   describe("accessibility", () => {
-    it("connects the label to the input using htmlFor and id derived from name", () => {
+    it("connects the label to the input using htmlFor and the provided id prop", () => {
       render(
         <FormField id="test-name" label="Test Label">
           <Input />
