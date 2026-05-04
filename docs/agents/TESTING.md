@@ -82,6 +82,7 @@ afterEach(() => vi.restoreAllMocks())
 - Internal component state
 - HTML tags rendered internally
 - Snapshots as primary assertion
+- Visual and layout. These are subjective and should be tested using storybook.
 
 **Always use `userEvent`, never `fireEvent`:**
 ```ts
