@@ -68,11 +68,14 @@
   --shadow-xl: var(--shadow-xl);
 
   /* Breakpoints */
-  --breakpoint-xs: var(--pr-breakpoint-100);
-  --breakpoint-sm: var(--pr-breakpoint-200);
-  --breakpoint-md: var(--pr-breakpoint-300);
-  --breakpoint-lg: var(--pr-breakpoint-400);
-  --breakpoint-xl: var(--pr-breakpoint-500);
+  /* I couldnt make primitives tokens for breakpoints due to CSS media queries limitations.
+     They need to have the raw value instead of a var() to work
+  */
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 48rem;
+  --breakpoint-md: 64rem;
+  --breakpoint-lg: 80rem;
+  --breakpoint-xl: 90rem;
 
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
