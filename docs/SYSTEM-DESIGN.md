@@ -215,7 +215,7 @@ Shared has no idea what kind of app this is. It only knows generic patterns. If 
 
 | Segment | What goes here |
 |---|---|
-| `ui/` | Generic components: `Button`, `Input`, `Badge`, `Card`. pure utility functions related to this components lies in utils.ts in each component's folder |
+| `ui/` | Generic components: `Button`, `Input`, `Badge`, `Card` |
 | `api/` | HTTP client setup (axios instance, fetch wrapper) |
 | `lib/` | Pure utility functions: `formatDate`, `formatCurrency` |
 | `config/` | Constants, route names, environment config |
