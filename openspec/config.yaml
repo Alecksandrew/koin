@@ -1,0 +1,38 @@
+schema: spec-driven
+
+context: |
+  Tech stack: Next.js (App Router), TypeScript (strict), Tailwind CSS
+  State management: Zustand (client), React Query (server)
+  Forms: React Hook Form + Zod
+  Auth/Backend: Supabase
+  Testing: Vitest + React Testing Library
+  Design system docs: Storybook
+  Lint: ESLint + eslint-plugin-boundaries (FSD enforcement)
+  Architecture: Feature-Sliced Design (FSD)
+  Architecture & FSD rules: ARCHITECTURE.md
+  Testing patterns: TESTING.md
+  Storybook documentation: STORYBOOK.md
+  System design: SYSTEM-DESIGN.md
+
+rules:
+  proposal:
+    - Read ARCHITECTURE.md before writing — validate FSD alignment
+    - Identify affected FSD layers and slices
+    - Include non-goals section
+    - Identify if any new dependency is needed and justify
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Specs describe observable behavior, not implementation details
+    - Reference existing patterns in codebase before inventing new ones
+    - Use RFC 2119 keywords (MUST, SHOULD, MAY) for requirement strength
+  design:
+    - Read ARCHITECTURE.md
+    - Specify which FSD segments (ui/, model/, api/, lib/) each file belongs to
+    - Justify any new dependency — no new deps without explicit approval
+  tasks:
+    - Break into chunks of max 2 hours
+    - Follow TDD order: write test → implement → document (Storybook)
+    - Each task must specify target FSD slice and segment
+    - Group tasks by FSD layer when possible
+    - Test tasks MUST follow TESTING.md patterns
+    - Storybook tasks MUST follow STORYBOOK.md guidelines
