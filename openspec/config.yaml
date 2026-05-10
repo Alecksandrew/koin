@@ -31,7 +31,7 @@ rules:
     - Justify any new dependency — no new deps without explicit approval
   tasks:
     - Break into chunks of max 2 hours
-    - Follow TDD order: write test → implement → document (Storybook)
+    - Write the tasks following the order of TDD: write test → implement → document (Storybook)
     - Each task must specify target FSD slice and segment
     - Group tasks by FSD layer when possible
     - Test tasks MUST follow TESTING.md patterns
