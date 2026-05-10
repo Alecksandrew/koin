@@ -35,7 +35,7 @@ const eslintConfig = defineConfig([
     },
     rules: {
       // Regra que proíbe importar de camadas superiores
-      "boundaries/element-types": [
+      "boundaries/dependencies": [
         "error",
         {
           default: "disallow",
