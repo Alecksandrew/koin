@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { FormField } from "./FormField";
 import { Input } from "../Input";
-import { Surface } from "../Surface";
 
 const meta = {
   title: "Shared/UI/FormField",
