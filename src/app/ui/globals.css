@@ -6,6 +6,8 @@
 @source inline("{xs:,sm:,md:,lg:,xl:,}flex-{row,col,row-reverse,col-reverse,wrap,nowrap,wrap-reverse}");
 @source inline("{xs:,sm:,md:,lg:,xl:,}items-{start,center,end,baseline,stretch}");
 @source inline("{xs:,sm:,md:,lg:,xl:,}justify-{normal,start,center,end,between,around,evenly}");
+@source inline("{xs:,sm:,md:,lg:,xl:,}grid-cols-{1,2,3,4,5,6,7,8,9,10,11,12,none}");
+@source inline("{xs:,sm:,md:,lg:,xl:,}grid-rows-{1,2,3,4,5,6,7,8,9,10,11,12,none}");
 
 @layer base {
   body {
