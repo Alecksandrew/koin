@@ -78,7 +78,7 @@ afterEach(() => vi.restoreAllMocks())
 - Empty / null / missing data fallbacks
 
 **Never test:**
-- CSS classes or Tailwind tokens
+- CSS classes or Tailwind tokens. Ignore completely. They gonna be tested on storybook and dont need to be tested on unit tests.
 - Internal component state
 - HTML tags rendered internally
 - Snapshots as primary assertion
