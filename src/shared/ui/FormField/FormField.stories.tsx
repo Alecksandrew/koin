@@ -15,9 +15,7 @@ const meta = {
     children: <Input placeholder="Enter your email" />,
   },
   tags: ["autodocs"],
-  decorators: [
-    (Story) => <Surface >{Story()}</Surface>
-  ]
+
 } satisfies Meta<typeof FormField>;
 
 export default meta;
