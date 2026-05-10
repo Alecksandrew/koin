@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { FormField } from "./FormField";
 import { Input } from "../Input";
-import { Surface } from "../Surface";
 
 const meta = {
   title: "Shared/UI/FormField",
@@ -15,9 +14,7 @@ const meta = {
     children: <Input placeholder="Enter your email" />,
   },
   tags: ["autodocs"],
-  decorators: [
-    (Story) => <Surface >{Story()}</Surface>
-  ]
+
 } satisfies Meta<typeof FormField>;
 
 export default meta;
